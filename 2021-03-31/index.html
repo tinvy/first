@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>網頁</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        nav {
+            width: 360px;
+            height: 995px;
+            background-color: sienna;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: flex-end;
+            align-items: center;
+            margin-left: 5px;
+            margin-top: 5px;
+        }
+
+        .menu {
+            width: 50px;
+            height: 200px;
+            margin-top: 70px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .line {
+            text-decoration: none;
+        }
+
+        .logo {
+            width: 150px;
+            height: 150px;
+            margin-top: 100px;
+        }
+
+        main {
+            width: 1570px;
+            height: 1000px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .top {
+            width: 1895px;
+            height: 500px;
+            margin-left: 5px;
+        }
+
+        .mid {
+            display: flex;
+        }
+
+        .container {
+            width: 1560px;
+            height: 1000px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 3px;
+        }
+
+        .boxX {
+            width: 1500px;
+            height: 330px;
+            background-color: slateblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 72px;
+            background-image: url(/kittens-555822_640.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .boxY {
+            width: 1500px;
+            height: 330px;
+            background-color: springgreen;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 72px;
+            background-image: url(/cnt014538.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+
+        .boxZ {
+            width: 1500px;
+            height: 330px;
+            background-color: salmon;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 72px;
+            background-image: url(/MAC40_BUNNIES_POST01.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .down {
+            width: 1895px;
+            height: 500px;
+            background-color: wheat;
+            margin-left: 5px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <img src="/cat.jpg" class="top">
+    <div class="mid">
+        <nav>
+            <div class="menu">
+                <a href="#X" class="line">
+                    <div class="list">貓</div>
+                </a>
+                <a href="#Y" class="line">
+                    <div class="list">狗</div>
+                </a>
+                <a href="#Z" class="line">
+                    <div class="list">兔</div>
+                </a>
+            </div>
+            <img src="/11130007420o4sq7s3r1.jpg" class="logo" alt="">
+        </nav>
+        <main>
+            <div class="container">
+                <div class="boxX" id="X">貓</div>
+                <div class="boxY" id="Y">狗</div>
+                <div class="boxZ" id="Z">兔</div>
+            </div>
+        </main>
+    </div>
+    <div class="down"></div>
+</body>
+
+</html>
