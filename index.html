@@ -74,37 +74,14 @@
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
-            margin-top: 3px;
+            background-color: aqua;
         }
 
-        .boxX {
-            width: 1500px;
+        .box1 {
+            width: 1540px;
             height: 330px;
-            background-color: slateblue;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 72px;
-        }
-
-        .boxY {
-            width: 1500px;
-            height: 330px;
-            background-color: springgreen;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 72px;
-        }
-
-        .boxZ {
-            width: 1500px;
-            height: 330px;
-            background-color: salmon;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 72px;
+            position: absolute;
+            z-index: 1;
         }
 
         .down {
@@ -115,6 +92,24 @@
             margin-top: 5px;
         }
 
+        .a {
+            width: 1550px;
+            height: 330px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 72px;
+        }
+
+        .box {
+            width: 1550px;
+            height: 330px;
+            z-index: 2;
+        }
+
+        .box:hover {
+            opacity: 0;
+        }
 
         @media (max-width:1200px) {
 
@@ -228,15 +223,18 @@
         </nav>
         <main>
             <div class="container">
-                <a href="">
-                    <img src="img/kittens-555822_640.jpg" class="boxX" id="X">
-                </a>
-                <a href="">
-                    <img src="img/cnt014538.jpg" class="boxY" id="Y">
-                </a>
-                <a href="">
-                    <img src="img/MAC40_BUNNIES_POST01.jpg" class="boxZ" id="Z">
-                </a>
+                <div class="a">
+                    <img src="img/kittens-555822_640.jpg" class="box1" id="X">
+                    <img src="img/kittens-555822_6402.jpg" class="box">
+                </div>
+                <div class="a">
+                    <img src="img/cnt014538.jpg" class="box1" id="Y">
+                    <img src="img/cnt0145382.jpg" class="box">
+                </div>
+                <div class="a">
+                    <img src="img/MAC40_BUNNIES_POST01.jpg" class="box1" id="Z">
+                    <img src="img/MAC40_BUNNIES_POST012.jpg" class="box">
+                </div>
             </div>
         </main>
     </div>
